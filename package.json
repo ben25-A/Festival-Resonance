@@ -1,0 +1,18 @@
+{
+  "name": "festival-resonnances",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass:build": "sass assets/sass/main.scss assets/css/main.css --no-source-map --style=compresed",
+    "sass:watch": "sass assets/sass/main.scss assets/css/main.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "sass": "^1.105.1"
+  }
+}

@@ -1,15 +1,15 @@
 Nom / nommage
 Jetons = jt
 couleur = color: 
-    - texte principale = --txt_primary
-    -texte courant = --txt_courant
-    -texte secondaire = --txt_secondaire
-    -fond alterné = --bck_altern
-    -brodure = --border
-    -principal = --principal
-    -survol = --hover
-    -accent = --accent
-    -erreur = --error
+    - texte principale = txt__primary
+    -texte courant = --txt__courant
+    -texte secondaire = txt__secondaire
+    -fond alterné = bck__altern
+    -brodure = border
+    -principal = principal
+    -survol = hover
+    -accent = accent
+    -erreur = error
 
 scènes = scenes
     scéne du lac = sc__lac

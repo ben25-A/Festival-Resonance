@@ -1,0 +1,141 @@
+@use "../abstracts/variables" as *;
+h2 {
+    margin: 0 0 $space__s;
+    padding-bottom: $space__xs;
+    border-bottom: 2px solid $primary__color;
+    font-size: $font__subtitle;
+    color: $txt__primary;
+}
+
+body > p {
+    margin: 0 0 $space__m;
+    font-size: $font__small;
+    color: $txt__secondary;
+}
+
+// Lignes communes
+.color,
+.scenes,
+.typo,
+.space {
+    display: flex;
+    align-items: center;
+    gap: $space__m;
+    padding: $space__m 0;
+    margin: 0 0 $space__xl;
+
+    > p {
+        flex: 0 0 140px;
+        margin: 0;
+        font-size: $font__small;
+        color: $txt__primary;
+    }
+}
+
+// Couleurs
+.color {
+    padding-bottom: $space__l;
+
+    span {
+        position: relative;
+        width: 48px;
+        height: 48px;
+        border-radius: $border__big;
+
+        &::after {
+            position: absolute;
+            top: calc(100% + #{$space__xs});
+            left: 50%;
+            transform: translateX(-50%);
+            white-space: nowrap;
+            font-size: 11px;
+            color: $txt__secondary;
+        }
+    }
+
+    &__courant   { background: $txt__courant; }
+    &__altern    { background: $bck__altern; }
+    &__border    { background: $border__color; }
+    &__principal { background: $primary__color; }
+    &__hover     { background: $primary__hover; }
+    &__accent    { background: $accent; }
+    &__error     { background: $error; }
+
+    // le 1er rond (texte principal) : à ajouter dans le HTML
+    &__txt       { background: $txt__primary; }
+    &__txt2      { background: $txt__secondary; }
+
+    &__txt::after       { content: "Texte principal"; }
+    &__courant::after   { content: "Texte courant"; }
+    &__txt2::after      { content: "Texte secondaire"; }
+    &__altern::after    { content: "Fond alterné"; }
+    &__border::after    { content: "Bordures"; }
+    &__principal::after { content: "Principale"; }
+    &__hover::after     { content: "Survol"; }
+    &__accent::after    { content: "Accent"; }
+    &__error::after     { content: "Erreur"; }
+}
+
+// Scènes
+.scenes {
+    padding-bottom: $space__l;
+
+    span {
+        position: relative;
+        padding: 12px $space__s;
+        border-radius: $border__small;
+        font-size: $font__small;
+        font-weight: 700;
+        color: $bck;
+
+        &::after {
+            position: absolute;
+            top: calc(100% + #{$space__xs});
+            left: 0;
+            font-size: 11px;
+            font-weight: 400;
+            color: $txt__secondary;
+        }
+    }
+
+    .sc__lac     { background: $scene__lac;     &::after { content: "#1F4E8C"; } }
+    .sc__forest  { background: $scene__forest;  &::after { content: "#2F6B3A"; } }
+    .sc__kiosque { background: $scene__kiosque; &::after { content: "#B87A1E"; } }
+}
+
+// Typographies
+.typo {
+    align-items: baseline;
+
+    .font__title    { font-size: $font__section;  font-weight: 800; color: $txt__primary; }
+    .font__subtitle { font-size: $font__subtitle; font-weight: 700; color: $txt__primary; }
+    .font__into     { font-size: $font__intro;    color: $txt__courant; }
+    .font__courant  { font-size: $font_txt;       color: $txt__courant; }
+    .font__small    { font-size: $font__small;    color: $txt__secondary; }
+}
+
+// Espacements
+.space {
+    align-items: flex-end;
+    gap: $space__l;
+
+    span {
+        position: relative;
+        background: $primary__color;
+
+        &::after {
+            position: absolute;
+            top: calc(100% + #{$space__xs});
+            left: 0;
+            font-size: 11px;
+            color: $txt__secondary;
+            white-space: nowrap;
+        }
+    }
+
+    &__xs { width: $space__xs; height: $space__xs; &::after { content: "8 px"; } }
+    &__s  { width: $space__s;  height: $space__s;  &::after { content: "16 px"; } }
+    &__m  { width: $space__m;  height: $space__m;  &::after { content: "24 px"; } }
+    &__l  { width: $space__l;  height: $space__l;  &::after { content: "40 px"; } }
+    &__xl { width: $space__xl; height: $space__xl; &::after { content: "64 px"; } }
+}

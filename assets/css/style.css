@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -33,6 +34,229 @@ h3 {
 
 p {
   font-size: 1rem;
+}
+
+h2 {
+  margin: 0 0 16px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #c8402a;
+  font-size: 28px;
+  color: #1c1b2e;
+}
+
+body > p {
+  margin: 0 0 24px;
+  font-size: 14px;
+  color: #6b6a80;
+}
+
+.color,
+.scenes,
+.typo,
+.space {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 24px 0;
+  margin: 0 0 64px;
+}
+.color > p,
+.scenes > p,
+.typo > p,
+.space > p {
+  flex: 0 0 140px;
+  margin: 0;
+  font-size: 14px;
+  color: #1c1b2e;
+}
+
+.color {
+  padding-bottom: 40px;
+}
+.color span {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  border-radius: 999px;
+}
+.color span::after {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font-size: 11px;
+  color: #6b6a80;
+}
+.color__courant {
+  background: #3a3950;
+}
+.color__altern {
+  background: #f4f5f7;
+}
+.color__border {
+  background: #e3e5ea;
+}
+.color__principal {
+  background: #c8402a;
+}
+.color__hover {
+  background: #a3311f;
+}
+.color__accent {
+  background: #f4c95d;
+}
+.color__error {
+  background: #b3261e;
+}
+.color__txt {
+  background: #1c1b2e;
+}
+.color__txt2 {
+  background: #6b6a80;
+}
+.color__txt::after {
+  content: "Texte principal";
+}
+.color__courant::after {
+  content: "Texte courant";
+}
+.color__txt2::after {
+  content: "Texte secondaire";
+}
+.color__altern::after {
+  content: "Fond alterné";
+}
+.color__border::after {
+  content: "Bordures";
+}
+.color__principal::after {
+  content: "Principale";
+}
+.color__hover::after {
+  content: "Survol";
+}
+.color__accent::after {
+  content: "Accent";
+}
+.color__error::after {
+  content: "Erreur";
+}
+
+.scenes {
+  padding-bottom: 40px;
+}
+.scenes span {
+  position: relative;
+  padding: 12px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.scenes span::after {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  font-size: 11px;
+  font-weight: 400;
+  color: #6b6a80;
+}
+.scenes .sc__lac {
+  background: #1f4e8c;
+}
+.scenes .sc__lac::after {
+  content: "#1F4E8C";
+}
+.scenes .sc__forest {
+  background: #2f6b3a;
+}
+.scenes .sc__forest::after {
+  content: "#2F6B3A";
+}
+.scenes .sc__kiosque {
+  background: #b87a1e;
+}
+.scenes .sc__kiosque::after {
+  content: "#B87A1E";
+}
+
+.typo {
+  align-items: baseline;
+}
+.typo .font__title {
+  font-size: 40px;
+  font-weight: 800;
+  color: #1c1b2e;
+}
+.typo .font__subtitle {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1c1b2e;
+}
+.typo .font__into {
+  font-size: 20px;
+  color: #3a3950;
+}
+.typo .font__courant {
+  font-size: 16px;
+  color: #3a3950;
+}
+.typo .font__small {
+  font-size: 14px;
+  color: #6b6a80;
+}
+
+.space {
+  align-items: flex-end;
+  gap: 40px;
+}
+.space span {
+  position: relative;
+  background: #c8402a;
+}
+.space span::after {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  font-size: 11px;
+  color: #6b6a80;
+  white-space: nowrap;
+}
+.space__xs {
+  width: 8px;
+  height: 8px;
+}
+.space__xs::after {
+  content: "8 px";
+}
+.space__s {
+  width: 16px;
+  height: 16px;
+}
+.space__s::after {
+  content: "16 px";
+}
+.space__m {
+  width: 24px;
+  height: 24px;
+}
+.space__m::after {
+  content: "24 px";
+}
+.space__l {
+  width: 40px;
+  height: 40px;
+}
+.space__l::after {
+  content: "40 px";
+}
+.space__xl {
+  width: 64px;
+  height: 64px;
+}
+.space__xl::after {
+  content: "64 px";
 }
 
 /*# sourceMappingURL=style.css.map */

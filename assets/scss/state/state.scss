@@ -3,6 +3,10 @@
 .navbar__link {
     transition: color .2s;
 
+    &--active {
+        font-weight: 700;
+    }
+
     &:hover,
     &--active {
         border-bottom-color: $primary__color;

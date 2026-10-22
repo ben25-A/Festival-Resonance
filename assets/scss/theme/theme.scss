@@ -293,7 +293,39 @@ body {
     background-color: #272738;
 }
 
+.footer__column--about p,
+.footer__column a,
+.footer__column p,
+.footer__bottom {
+    color: $footer__text;
+}
+
+.footer__newsletter-form input {
+    color: $bck;
+    background-color: #272738;
+}
+
 .footer__newsletter-form input::placeholder,
 .footer__bottom a {
-    color: $txt__secondary;
+    color: $footer__text;
+}
+
+// Liseré de couleur sous la photo des cartes artistes
+.artist-card--lake .artist-card__image {
+    border-bottom-color: $scene__lac;
+}
+
+.artist-card--forest .artist-card__image {
+    border-bottom-color: $scene__forest;
+}
+
+.artist-card--kiosk .artist-card__image {
+    border-bottom-color: $scene__kiosque;
+}
+
+// Le Kiosque (fond clair) : texte sombre pour le contraste
+.stages__card--kiosk,
+.stages__card--kiosk .stages__info p,
+.stages__card--kiosk .stages__link {
+    color: $txt__primary;
 }

@@ -224,6 +224,7 @@
 .artist-card__image {
     height: 200px;
     overflow: hidden;
+    border-bottom: 4px solid transparent;
 
     img {
         width: 100%;
@@ -319,8 +320,8 @@
 }
 
 .footer__column a,
-.footer__column p {
-    font-size: 12px;
+.footer__bottom a {
+    text-decoration: none;
 }
 
 .footer__column p {

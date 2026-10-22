@@ -1,6 +1,6 @@
-@use "abstracts/_variables.scss";
-@use "base/base.scss";
-@use "layout/layout.scss";
-@use "module/module.scss";
-@use "state/state.scss";
-@use "theme/theme.scss";
+@use "abstracts/_variables.scss" as *;
+@use "base/base.scss" as *;
+@use "layout/layout.scss" as *;
+@use "module/module.scss" as *;
+@use "state/state.scss" as *;
+@use "theme/theme.scss" as *;

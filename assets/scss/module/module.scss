@@ -348,3 +348,219 @@
         font-size: 36px;
     }
 }
+
+// ---------- Fiche artiste ----------
+.artist-header__breadcrumb {
+    margin-bottom: $space__s;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.artist-header__badge {
+    display: inline-block;
+    margin-bottom: 12px;
+    padding: 4px 12px;
+    border-radius: $border__big;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.artist-header__title {
+    margin-bottom: 12px;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+}
+
+.artist-header__details {
+    font-size: 18px;
+}
+
+.artist-detail__media {
+    margin: 0;
+    overflow: hidden;
+    border-radius: $border__medium;
+
+    img {
+        display: block;
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+    }
+}
+
+.artist-detail__title {
+    margin-bottom: $space__s;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.artist-detail__text {
+    margin-bottom: 12px;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.artist-detail__infos {
+    margin-top: $space__m;
+    border-radius: $border__medium;
+}
+
+.artist-detail__label {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.artist-detail__value {
+    margin: 0;
+    font-size: 13px;
+}
+
+.artist-detail__button {
+    padding: 12px 22px;
+    border: 1px solid transparent;
+    border-radius: $border__small;
+    font-family: inherit;
+    font-size: $font__small;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.artist-more__title {
+    margin-bottom: $space__m;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+// ---------- Billetterie ----------
+.pricing__card {
+    border: 1px solid $border__color;
+    border-radius: $border__medium;
+}
+
+.pricing__badge {
+    padding: 4px 12px;
+    border-radius: $border__big;
+    font-size: 11px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.pricing__name {
+    margin-bottom: $space__s;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.pricing__price {
+    margin-bottom: 10px;
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.pricing__description {
+    min-height: 36px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.pricing__features {
+    margin-top: $space__s;
+    border-top: 1px solid transparent;
+    list-style: none;
+}
+
+.pricing__feature {
+    display: flex;
+    gap: 10px;
+    font-size: 12px;
+
+    &::before {
+        content: "\2713";
+        font-weight: 800;
+    }
+}
+
+.pricing__button {
+    width: 100%;
+    padding: 12px 22px;
+    border: 1px solid transparent;
+    border-radius: $border__small;
+    font-family: inherit;
+    font-size: $font__small;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.reservation__card {
+    border: 1px solid $border__color;
+    border-radius: $border__medium;
+}
+
+.reservation__title {
+    margin-bottom: 6px;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.reservation__hint {
+    margin-bottom: $space__s;
+    font-size: 12px;
+}
+
+.reservation__label {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.reservation__input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid $border__color;
+    border-radius: $border__small;
+    font-family: inherit;
+    font-size: $font__small;
+    outline: none;
+}
+
+.reservation__select {
+    padding-right: 40px;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5l5 5 5-5' fill='none' stroke='%231c1b2e' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    cursor: pointer;
+}
+
+.reservation__error {
+    margin: 0;
+    font-size: 11px;
+}
+
+.reservation__terms {
+    font-size: 12px;
+
+    input {
+        width: 16px;
+        height: 16px;
+        margin: 0;
+    }
+}
+
+.reservation__total {
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.reservation__submit {
+    padding: 12px 22px;
+    border: 1px solid transparent;
+    border-radius: $border__small;
+    font-family: inherit;
+    font-size: $font__small;
+    font-weight: 700;
+    cursor: pointer;
+}

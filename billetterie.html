@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billetterie - RÉSONNANCES Festival 2027</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body class="page--programme">
+
+    <header class="navbar">
+        <div class="navbar__container">
+            <a href="index.html" class="navbar__brand">
+                <div class="navbar__logo"></div>
+                <div class="navbar__brand-text">
+                    <span class="navbar__brand-title">RÉSONNANCES</span>
+                    <span class="navbar__brand-subtitle">Festival · 9 au 11 Juillet 2027</span>
+                </div>
+            </a>
+
+            <nav class="navbar__links">
+                <a href="index.html" class="navbar__link">Accueil</a>
+                <a href="programme.html" class="navbar__link">Programme</a>
+                <a href="billetterie.html" class="navbar__link navbar__link--active">Billetterie</a>
+                <a href="infos.html" class="navbar__link">Infos pratiques</a>
+            </nav>
+
+            <div class="navbar__actions">
+                <button class="navbar__button navbar__button--outline">Mode sombre</button>
+                <button class="navbar__button navbar__button--primary">Réserver</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="programme-header">
+        <div class="programme-header__container">
+            <div class="programme-header__breadcrumb">Accueil / Billetterie</div>
+            <h1 class="programme-header__title">Billetterie</h1>
+            <p class="programme-header__description">
+                Choisissez votre formule, puis réservez en quelques minutes.
+            </p>
+        </div>
+    </section>
+
+    <main>
+        <section class="pricing">
+            <div class="pricing__container">
+                <div class="pricing__grid">
+
+                    <article class="pricing__card">
+                        <h2 class="pricing__name">Pass 1 jour</h2>
+                        <p class="pricing__price">49 €</p>
+                        <p class="pricing__description">Accès à toutes les scènes le jour choisi</p>
+                        <ul class="pricing__features">
+                            <li class="pricing__feature">Accès aux trois scènes</li>
+                            <li class="pricing__feature">Navette gratuite depuis la gare</li>
+                            <li class="pricing__feature">Bracelet nominatif</li>
+                        </ul>
+                        <button type="button" class="pricing__button pricing__button--outline" data-formule="1">Choisir cette formule</button>
+                    </article>
+
+                    <article class="pricing__card pricing__card--featured">
+                        <span class="pricing__badge">Le plus choisi</span>
+                        <h2 class="pricing__name">Pass 3 jours</h2>
+                        <p class="pricing__price">119 €</p>
+                        <p class="pricing__description">Le festival en entier, du vendredi au dimanche</p>
+                        <ul class="pricing__features">
+                            <li class="pricing__feature">Accès aux trois scènes</li>
+                            <li class="pricing__feature">Navette gratuite depuis la gare</li>
+                            <li class="pricing__feature">Accès prioritaire au Kiosque</li>
+                            <li class="pricing__feature">Gobelet réutilisable offert</li>
+                        </ul>
+                        <button type="button" class="pricing__button pricing__button--primary" data-formule="2">Choisir cette formule</button>
+                    </article>
+
+                    <article class="pricing__card">
+                        <h2 class="pricing__name">Pass 3 jours + camping</h2>
+                        <p class="pricing__price">159 €</p>
+                        <p class="pricing__description">Le festival et un emplacement au camping du lac</p>
+                        <ul class="pricing__features">
+                            <li class="pricing__feature">Tous les avantages du pass 3 jours</li>
+                            <li class="pricing__feature">Emplacement de camping</li>
+                            <li class="pricing__feature">Douches et consignes</li>
+                        </ul>
+                        <button type="button" class="pricing__button pricing__button--outline" data-formule="3">Choisir cette formule</button>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="reservation" id="reservation">
+            <div class="reservation__container">
+                <form class="reservation__card">
+                    <h2 class="reservation__title">Réserver</h2>
+                    <p class="reservation__hint">Les champs marqués d'un astérisque sont obligatoires.</p>
+
+                    <div class="reservation__grid">
+                        <div class="reservation__field">
+                            <label class="reservation__label" for="prenom">Prénom *</label>
+                            <input class="reservation__input" type="text" id="prenom" name="prenom" value="Camille" required>
+                        </div>
+
+                        <div class="reservation__field">
+                            <label class="reservation__label" for="nom">Nom *</label>
+                            <input class="reservation__input" type="text" id="nom" name="nom" value="Durand" required>
+                        </div>
+
+                        <div class="reservation__field">
+                            <label class="reservation__label" for="email">E-mail *</label>
+                            <input class="reservation__input" type="email" id="email" name="email" value="camille.durand@" aria-invalid="true" aria-describedby="email-error" required>
+                            <p class="reservation__error" id="email-error">Adresse e-mail invalide.</p>
+                        </div>
+
+                        <div class="reservation__field">
+                            <label class="reservation__label" for="telephone">Téléphone</label>
+                            <input class="reservation__input" type="tel" id="telephone" name="telephone" value="06 12 34 56 78">
+                        </div>
+
+                        <div class="reservation__field">
+                            <label class="reservation__label" for="formule">Formule *</label>
+                            <select class="reservation__input reservation__select" id="formule" name="formule" required>
+                                <option value="1" data-price="49">Pass 1 jour</option>
+                                <option value="2" data-price="119" selected>Pass 3 jours</option>
+                                <option value="3" data-price="159">Pass 3 jours + camping</option>
+                            </select>
+                        </div>
+
+                        <div class="reservation__field">
+                            <label class="reservation__label" for="nombre">Nombre de pass *</label>
+                            <select class="reservation__input reservation__select" id="nombre" name="nombre" required>
+                                <option value="1">1</option>
+                                <option value="2" selected>2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <label class="reservation__terms">
+                        <input type="checkbox" name="cgv" checked required>
+                        <span>J'accepte les conditions générales de vente *</span>
+                    </label>
+
+                    <div class="reservation__footer">
+                        <p class="reservation__total">Total : <span id="total">238</span> €</p>
+                        <button type="submit" class="reservation__submit">Valider la réservation</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__grid">
+                <div class="footer__column footer__column--about">
+                    <h3>RÉSONNANCES</h3>
+                    <p>Festival de musique au bord du lac des Aulnes. Trois jours, trois scènes, une quarantaine d'artistes.</p>
+                </div>
+
+                <div class="footer__column">
+                    <h4>Le festival</h4>
+                    <ul>
+                        <li><a href="programme.html">Programme</a></li>
+                        <li><a href="billetterie.html">Billetterie</a></li>
+                        <li><a href="#">Infos pratiques</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__column">
+                    <h4>Contact</h4>
+                    <p>contact@resonances-festival.fr</p>
+                    <p>04 00 00 00 00</p>
+                </div>
+
+                <div class="footer__column">
+                    <h4>Newsletter</h4>
+                    <form class="footer__newsletter-form">
+                        <input type="email" placeholder="Votre e-mail" required>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>© 2027 Association Résonnances · <a href="#">Mentions légales</a> · <a href="#">Accessibilité</a> · <a href="#">Crédits photos</a> · <a href="#">Bibliothèque de composants</a></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -329,3 +329,153 @@ body {
 .stages__card--kiosk .stages__link {
     color: $txt__primary;
 }
+
+// ---------- Fiche artiste ----------
+.artist-header {
+    color: $bck;
+}
+
+.artist-header--forest {
+    background-color: $scene__forest;
+}
+
+.artist-header--lake {
+    background-color: $scene__lac;
+}
+
+.artist-header--kiosk {
+    background-color: $scene__kiosque;
+}
+
+.artist-header__badge {
+    color: $txt__primary;
+    background-color: $bck;
+}
+
+.artist-header__breadcrumb {
+    color: rgba($bck, .85);
+}
+
+.artist-detail__title,
+.artist-more__title {
+    color: $txt__primary;
+}
+
+.artist-detail__text,
+.artist-detail__value {
+    color: $txt__courant;
+}
+
+.artist-detail__label {
+    color: $txt__secondary;
+}
+
+.artist-detail__infos {
+    background-color: $bck__altern;
+}
+
+.artist-detail__button--forest {
+    color: $bck;
+    background-color: $scene__forest;
+}
+
+.artist-detail__button--outline {
+    border-color: $txt__primary;
+    color: $txt__primary;
+    background-color: transparent;
+}
+
+// ---------- Billetterie ----------
+.pricing__card,
+.reservation__card {
+    background-color: $bck;
+}
+
+.pricing__name,
+.reservation__title,
+.reservation__label,
+.reservation__total {
+    color: $txt__primary;
+}
+
+.pricing__price {
+    color: $primary__color;
+}
+
+.pricing__description,
+.reservation__hint {
+    color: $txt__secondary;
+}
+
+.pricing__features {
+    border-top-color: $border__color;
+}
+
+.pricing__feature {
+    color: $txt__courant;
+
+    &::before {
+        color: $scene__forest;
+    }
+}
+
+.pricing__button--outline {
+    border-color: $txt__primary;
+    color: $txt__primary;
+    background-color: transparent;
+}
+
+.pricing__button--primary,
+.reservation__submit {
+    color: $bck;
+    background-color: $primary__color;
+}
+
+// Formule mise en avant (carte sombre)
+.pricing__card--featured {
+    border-color: $txt__primary;
+    background-color: $txt__primary;
+
+    .pricing__name {
+        color: $bck;
+    }
+
+    .pricing__price {
+        color: $accent;
+    }
+
+    .pricing__description,
+    .pricing__feature {
+        color: $border__color;
+    }
+
+    .pricing__features {
+        border-top-color: #37374a;
+    }
+
+    .pricing__feature::before {
+        color: $accent;
+    }
+}
+
+.pricing__badge {
+    color: $txt__primary;
+    background-color: $accent;
+}
+
+.reservation__input {
+    color: $txt__primary;
+    background-color: $bck;
+}
+
+.reservation__error {
+    color: $primary__color;
+}
+
+.reservation__terms {
+    color: $txt__courant;
+
+    input {
+        accent-color: $primary__color;
+    }
+}

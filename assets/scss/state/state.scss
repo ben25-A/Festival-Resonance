@@ -81,3 +81,44 @@
 .footer__bottom a:hover {
     color: $txt__secondary;
 }
+
+// ---------- Fiche artiste ----------
+.artist-detail__button {
+    transition: background-color .2s, filter .2s;
+
+    &--forest:hover {
+        filter: brightness(.9);
+    }
+
+    &--outline:hover {
+        background-color: $bck__altern;
+    }
+}
+
+// ---------- Billetterie ----------
+.pricing__button,
+.reservation__submit {
+    transition: background-color .2s, color .2s;
+}
+
+.pricing__button--outline:hover {
+    background-color: $bck__altern;
+}
+
+.pricing__button--primary:hover,
+.reservation__submit:hover {
+    background-color: $primary__hover;
+}
+
+.reservation__input {
+    transition: border-color .2s, box-shadow .2s;
+
+    &:focus,
+    &[aria-invalid="true"] {
+        border-color: $primary__color;
+    }
+
+    &:focus {
+        box-shadow: 0 0 0 3px rgba($primary__color, .15);
+    }
+}

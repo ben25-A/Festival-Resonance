@@ -1253,3 +1253,168 @@ $error-bg:    #fbdcd8;
         }
     }
 }
+
+// ---------- Fiche artiste ----------
+.artist-header {
+    padding: 28px 0 48px;
+}
+
+.artist-header__container,
+.artist-detail__container,
+.artist-more__container {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.artist-detail {
+    padding: 50px 0 30px;
+}
+
+.artist-detail__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+.artist-detail__infos {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: $space__m;
+    padding: 20px $space__m;
+}
+
+.artist-detail__info {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: $space__s;
+    align-items: baseline;
+}
+
+.artist-detail__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.artist-more {
+    padding: 30px 0 60px;
+}
+
+.artist-more__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: $space__m;
+}
+
+@media (max-width: 900px) {
+    .artist-detail__grid,
+    .artist-more__grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+// ---------- Billetterie ----------
+.pricing {
+    padding: 56px 0 30px;
+}
+
+.pricing__container,
+.reservation__container {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.pricing__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: $space__m;
+}
+
+.pricing__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: $space__m;
+}
+
+.pricing__card--featured {
+    margin-top: -14px;
+}
+
+.pricing__badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.pricing__features {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: $space__l;
+    padding-top: $space__s;
+}
+
+.reservation {
+    padding: 30px 0 60px;
+}
+
+.reservation__card {
+    padding: 28px 32px;
+}
+
+.reservation__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px 24px;
+    margin-bottom: $space__m;
+}
+
+.reservation__field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.reservation__terms {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: $space__m;
+}
+
+.reservation__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: $space__s;
+}
+
+@media (max-width: 900px) {
+    .pricing__grid,
+    .reservation__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pricing__card--featured {
+        margin-top: 0;
+    }
+
+    .pricing__grid {
+        row-gap: $space__l;
+    }
+
+    .reservation__card {
+        padding: $space__m $space__s;
+    }
+}

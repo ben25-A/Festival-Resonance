@@ -122,3 +122,34 @@
         box-shadow: 0 0 0 3px rgba($primary__color, .15);
     }
 }
+
+// ---------- Infos pratiques ----------
+.questions__item {
+    transition: border-color .2s;
+
+    &:hover {
+        border-color: $txt__secondary;
+    }
+
+    &[open] {
+        // 2 px visuels sans décaler le contenu
+        border-color: $txt__primary;
+        box-shadow: 0 0 0 1px $txt__primary;
+    }
+}
+
+.questions__question::after {
+    transition: transform .2s;
+}
+
+.questions__item[open] .questions__question::after {
+    transform: rotate(180deg);
+}
+
+.contact__button {
+    transition: background-color .2s;
+
+    &:hover {
+        background-color: $txt__courant;
+    }
+}

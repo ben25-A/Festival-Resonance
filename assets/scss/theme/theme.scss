@@ -479,3 +479,36 @@ body {
         accent-color: $primary__color;
     }
 }
+
+// ---------- Infos pratiques ----------
+.info-card,
+.questions__item {
+    background-color: $bck;
+}
+
+.info-card__number {
+    color: $primary__color;
+    background-color: $bck__altern;
+}
+
+.info-card__title,
+.questions__title,
+.questions__question,
+.contact__title {
+    color: $txt__primary;
+}
+
+.info-card__text,
+.questions__answer,
+.contact__text {
+    color: $txt__courant;
+}
+
+.contact__box {
+    background-color: $bck__altern;
+}
+
+.contact__button {
+    color: $bck;
+    background-color: $txt__primary;
+}

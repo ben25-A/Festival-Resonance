@@ -564,3 +564,91 @@
     font-weight: 700;
     cursor: pointer;
 }
+
+// ---------- Infos pratiques ----------
+.info-card {
+    border: 1px solid $border__color;
+    border-radius: $border__medium;
+}
+
+.info-card__number {
+    border-radius: 50%;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.info-card__title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.info-card__text {
+    margin: 0;
+    font-size: 15px;
+    line-height: 28px;
+}
+
+.questions__title {
+    margin-bottom: $space__m;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+.questions__item {
+    border: 1px solid $border__color;
+    border-radius: $border__medium;
+}
+
+.questions__question {
+    font-size: 18px;
+    font-weight: 700;
+    list-style: none;
+    cursor: pointer;
+
+    &::-webkit-details-marker {
+        display: none;
+    }
+
+    &::after {
+        content: "";
+        flex: 0 0 auto;
+        width: 16px;
+        height: 10px;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='10' viewBox='0 0 16 10'%3E%3Cpath d='M1.5 1.5l6.5 6.5 6.5-6.5' fill='none' stroke='%231c1b2e' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+.questions__answer {
+    max-width: 800px;
+    margin: 16px 0 0;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.contact__box {
+    border-radius: $border__medium;
+}
+
+.contact__title {
+    margin-bottom: 6px;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.contact__text {
+    margin: 0;
+    font-size: 16px;
+}
+
+.contact__button {
+    flex: 0 0 auto;
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: $border__small;
+    font-size: $font__small;
+    font-weight: 700;
+    text-decoration: none;
+}
